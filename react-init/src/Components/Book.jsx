@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Book() {
+export function Book(props) {
   return (
-    <h3>Livro 1</h3>
+    <h3>{`id: ${props.id}, Título: ${props.title}`}</h3>
   )
 }

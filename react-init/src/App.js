@@ -1,8 +1,30 @@
+import { Book } from "./Components/Book"
 
-function App() {
+
+function App(props) {
+
+  const livros = [
+    {id: 1, title: "O senhor dos anéis"},
+    {id: 2, title: "O poderoso chefão"},
+    {id: 3, title: "Carrie, a estranha"},
+    {id: 4, title: "Platoon"},
+    {id: 5, title: "Alien, o oitavo passageiro"}
+  ] 
+
+
   return (
     <div>
       <h1>Livros</h1>
+
+      <div>
+        {livros.map(i => <Book key={i.id} id={i.id} title={i.title} />)}
+      {/* <Book title="O senhor dos anéis" />
+      <Book title="O Poderoso Chefão" />
+      <Book title="Carrie, a estranha" />
+      <Book title="Platoon" />
+      <Book title="Alien, o oitavo passageiro" /> */}
+
+      </div>
 
       <div>
         {/* <ul>
