@@ -1,4 +1,5 @@
 import { Book } from "./Components/Book"
+import FormBook from "./Pages/FormBook";
 
 
 function App(props) {
@@ -14,6 +15,10 @@ function App(props) {
 
   return (
     <div>
+
+      <FormBook />
+
+      
       <h1>Livros</h1>
 
       <div>
